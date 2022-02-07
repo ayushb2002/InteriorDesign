@@ -1,0 +1,674 @@
+@import url("https://fonts.googleapis.com/css2?family=Piedra&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Chelsea+Market&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Overpass:ital,wght@1,600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-fluid {
+  overflow: hidden;
+}
+
+li {
+  font-family: 'Overpass', sans-serif;
+}
+
+.bg-hero {
+  background: url(../img/hero-img.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-hero {
+    height: 35vh;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-hero {
+    height: 100vh;
+    background-size: cover;
+  }
+}
+
+.bg-login {
+  background: url(../img/login.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-login {
+    height: 30vh;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-login {
+    height: 100vh;
+    background-size: cover;
+  }
+}
+
+.bg-register {
+  background: url(../img/register.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-register {
+    height: 30vh;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-register {
+    height: 100vh;
+    background-size: cover;
+  }
+}
+
+.bg-shop {
+  background: url(../img/shop.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-shop {
+    height: 30vh;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-shop {
+    height: 100vh;
+    background-size: cover;
+  }
+}
+
+.bg-gallery {
+  background: url(../img/gallery.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-gallery {
+    height: 30vh;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-gallery {
+    height: 100vh;
+    background-size: cover;
+  }
+}
+
+.bg-pricing {
+  background: url(../img/pricing.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-pricing {
+    height: 30vh;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-pricing {
+    height: 100vh;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-contact {
+    height: 100%;
+    background-size: contain;
+    background-color: black;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-contact {
+    background: url(../img/contact.jpg);
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-size: cover;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .text-over {
+    margin-top: 5%;
+    font-weight: bolder;
+  }
+  .text-over .h-top {
+    font-size: 1em;
+    background-color: #033a91;
+  }
+  .text-over .h-down {
+    font-size: 0.8em;
+    background-color: #033a91;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .text-over {
+    margin-top: 12%;
+    font-weight: bolder;
+  }
+  .text-over .h-top {
+    font-size: 2.5em;
+    background-color: #033a91;
+    padding: 1%;
+  }
+  .text-over .h-down {
+    font-size: 1.2em;
+    background-color: #033a91;
+    padding: 1%;
+  }
+}
+
+.text-over-login {
+  font-family: 'Orbitron', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-over-login {
+    margin-top: 5%;
+    font-weight: bolder;
+  }
+  .text-over-login .h-top {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .text-over-login {
+    margin-top: 12%;
+    font-weight: bolder;
+  }
+  .text-over-login .h-top {
+    background-color: #ffffa3;
+    font-size: 2.5em;
+    padding: 1%;
+  }
+}
+
+.text-over-pricing {
+  text-align: center;
+  font-family: 'Orbitron', sans-serif;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-over-pricing {
+    margin-top: 5%;
+    font-weight: bolder;
+  }
+  .text-over-pricing .h-top {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .text-over-pricing {
+    margin-top: 20%;
+    font-weight: bolder;
+  }
+  .text-over-pricing .h-top {
+    background-color: #ffffa3;
+    font-size: 2.5em;
+    padding: 1%;
+  }
+}
+
+.text-over-gallery {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-over-gallery {
+    margin-top: 5%;
+    font-weight: bolder;
+  }
+  .text-over-gallery .h-top {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .text-over-gallery {
+    margin-top: 20%;
+    font-weight: bolder;
+  }
+  .text-over-gallery .h-top {
+    text-shadow: 2px 2px #153ba3;
+    font-size: 2.5em;
+    padding: 1%;
+  }
+}
+
+.text-over-shop {
+  font-family: 'Orbitron', sans-serif;
+  text-align: center;
+  color: white;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-over-shop {
+    margin-top: 5%;
+    font-weight: bolder;
+  }
+  .text-over-shop .h-top {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .text-over-shop {
+    margin-top: 10%;
+    font-weight: bolder;
+  }
+  .text-over-shop .h-top {
+    background-color: #153ba3;
+    font-size: 2.5em;
+    padding: 1%;
+  }
+}
+
+.bg-purple {
+  background-color: #191736 !important;
+}
+
+.bg-dblue {
+  background-color: #00041a !important;
+}
+
+h1 {
+  font-family: 'Piedra', cursive;
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+  75% {
+    opacity: 0.3;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.animation-class {
+  -webkit-animation-name: fadeIn;
+          animation-name: fadeIn;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-delay: -2s;
+          animation-delay: -2s;
+  font-weight: bolder;
+}
+
+@media only screen and (min-width: 768px) {
+  .space {
+    width: 450px;
+  }
+}
+
+.ref {
+  margin-top: 5%;
+}
+
+.ref div {
+  overflow: hidden;
+}
+
+.round {
+  border-radius: 50%;
+  margin-bottom: 5%;
+}
+
+.why-us-text {
+  font-weight: bold;
+  font-size: 1em;
+}
+
+.bg-parallax {
+  background: url(../img/index-img.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 768px) {
+  .bg-parallax {
+    height: auto;
+    background-size: contain;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .bg-parallax {
+    height: 60vh;
+    background-size: cover;
+  }
+}
+
+.footer {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer {
+    height: auto;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    height: auto;
+  }
+}
+
+.quote {
+  font-weight: bold;
+  color: white;
+  text-transform: uppercase;
+  text-shadow: 3px 3px #003282;
+  font-family: 'Chelsea Market', cursive;
+}
+
+@media only screen and (max-width: 768px) {
+  .quote {
+    font-size: 1em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .quote {
+    font-size: 2em;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .m-top {
+    margin-top: 7%;
+  }
+}
+
+.content-center {
+  -ms-flex-line-pack: center;
+      align-content: center;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.f-down {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.social-links a {
+  text-decoration: none;
+  color: white;
+  font-size: 2em;
+  margin: 2%;
+}
+
+.lds-hourglass {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+}
+
+.lds-hourglass:after {
+  content: " ";
+  display: block;
+  border-radius: 50%;
+  width: 0;
+  height: 0;
+  margin: 8px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 32px solid #dfc;
+  border-color: #dfc transparent #dfc transparent;
+  -webkit-animation: lds-hourglass 1.2s infinite;
+          animation: lds-hourglass 1.2s infinite;
+}
+
+@-webkit-keyframes lds-hourglass {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    -webkit-transform: rotate(1800deg);
+            transform: rotate(1800deg);
+  }
+}
+
+@keyframes lds-hourglass {
+  0% {
+    -webkit-transform: rotate(0);
+            transform: rotate(0);
+    -webkit-animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+            animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+  }
+  50% {
+    -webkit-transform: rotate(900deg);
+            transform: rotate(900deg);
+    -webkit-animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+            animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+  }
+  100% {
+    -webkit-transform: rotate(1800deg);
+            transform: rotate(1800deg);
+  }
+}
+
+#hidden {
+  display: none;
+}
+
+.marg {
+  margin-top: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+  .marg {
+    margin-left: 40%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .marg {
+    margin-left: 5%;
+  }
+}
+
+.h-des {
+  font-size: 2em;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
+.p-des {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-shadow: 2px 2px black;
+}
+
+.contact-form {
+  margin: 5%;
+  padding: 5%;
+  color: white;
+  font-size: 1.5em;
+  font-weight: bolder;
+  text-transform: uppercase;
+  border: 1px solid white;
+}
+
+.contact-form form input {
+  background-color: transparent;
+  color: white;
+}
+
+.contact-form form input:focus {
+  background-color: black;
+  color: white;
+}
+
+.contact-form form textarea {
+  background-color: transparent;
+  color: white;
+}
+
+.contact-form form textarea:focus {
+  background-color: black;
+  color: white;
+}
+
+.contact-form form ::-webkit-input-placeholder {
+  color: white;
+}
+
+.contact-form form :-ms-input-placeholder {
+  color: white;
+}
+
+.contact-form form ::-ms-input-placeholder {
+  color: white;
+}
+
+.contact-form form ::placeholder {
+  color: white;
+}
+
+textarea {
+  resize: none;
+}
+
+.price-div {
+  overflow: hidden;
+  text-align: center;
+}
+
+.price-div button {
+  border: none;
+}
+
+h3 {
+  font-family: 'Overpass', sans-serif;
+}
+
+.l-none ul li {
+  list-style-type: none;
+}
+
+.cart-items {
+  overflow: hidden;
+}
+
+.cart-items img {
+  width: 100%;
+  height: 40vh;
+  border: 1px solid black;
+}
+
+.cart-items button {
+  border: none;
+}
+
+.cover-btm {
+  height: 50vh;
+}
+
+.reg-form-cont {
+  padding: 5% 15%;
+}
+
+.inp-form {
+  padding: 5% 5%;
+  border: 1px solid black;
+}
+
+.inp-form div label {
+  display: block;
+  text-align: center;
+}
+
+.inp-form div input {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: 2px solid black;
+  background-color: transparent;
+  text-align: center;
+}
+
+.btn-spc {
+  margin-top: 5%;
+}
+
+.btn-spc button {
+  display: block;
+  margin: 0 auto;
+}
+/*# sourceMappingURL=style.css.map */

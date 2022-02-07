@@ -1,0 +1,93 @@
+{% extends 'homes/base.html' %}
+
+{% load static %}
+
+{% block title %}
+Welcome to HomeDecors || Build stylish homes!
+{% endblock title %}
+
+
+{% block upperbody %}
+<section id="hero-area">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bg-hero">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-12 text-white text-center text-uppercase text-over">
+                        <span class="h-top">Welcome to Home Decorators</span>
+                        <br>
+                        <span class="h-down">We are the leaders of Interior Decoration Industry</span>
+                    </div>
+                    <div class="col-lg-5 col-sm-12"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock upperbody %}
+
+
+{% block lowerbody %}
+<section id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 mt-5"></div>
+            <div class="col-12">
+                <div class="m-5 text-center">
+                    <h1 class="text-uppercase">Why us?</h1>
+                    <div class="row ref">
+
+                        <div class="col-lg-4 col-sm-12 p-3 text-center">
+                            <img src="{% static 'img/durable.jpg' %}" alt="durable" class="img-fluid round">
+                            <h2>Durable</h2>
+                            <p class="mt-3 why-us-text">
+                                3 Year Guarantee for manufacture defect on furniture and special decorations!
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 p-3 text-center">
+                            <img src="{% static 'img/mesmerising.jpg' %}" alt="mesmerising" class="img-fluid round">
+                            <h2>Mesmerising</h2>
+                            <p class="mt-3 why-us-text">
+                                Customer satisfaction is the key to success! We are a family of 1M happy customers. Post installation servies are free for 1 year.
+                            </p>
+                        </div>
+                        <div class="col-lg-4 col-sm-12 p-3 text-center">
+                            <img src="{% static 'img/rates.jpg' %}" alt="rates" class="img-fluid round">
+                            <h2>Reasonable Rates</h2>
+                            <p class="mt-3 why-us-text">
+                                Low cost and high quality makes us the leader of the industry!
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section id="parallax-img" class="mb-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 bg-parallax">
+                <div class="m-5">
+                    <div class="row">
+                        <div class="col-12 m-top"></div>
+                        <div class="col-12 text-center">
+                            <span class="quote">Interior Design is all about making the best possible use of the available space!</span>
+                        </div>
+                        <div class="col-12 content-center my-3">
+                            <a href="{% url 'shop' %}"><button type="button" class="btn btn-outline-primary"><b>ONLINE SHOPPING PORTAL</b></button></a>
+                            <a href="{% url 'visit' %}"><button type="button" class="btn btn-outline-primary"><b>PAY A VISIT</b></button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<script>
+
+</script>
+{% endblock lowerbody %}

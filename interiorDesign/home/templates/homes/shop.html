@@ -1,0 +1,94 @@
+{% extends 'homes/base.html' %}
+
+{% load static %}
+
+{% block title %}
+    Shop @ HomeDecors
+{% endblock title %}
+
+
+{% block upperbody %}
+    <section id="hero-shop">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 bg-shop">
+                    <div class="row">
+                        <div class="col-lg-7 col-sm-12 text-center text-uppercase text-over-shop">
+                            <span class="h-top">Shop With Us</span>
+                        </div>
+                        <div class="col-lg-5 col-sm-12">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock upperbody %}
+    
+
+{% block lowerbody %}
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12">
+                    <div class="m-5 text-center">
+                        <h1>Available Items</h1>
+                    </div>
+                    <div class="m-5">
+                        <div class="row">
+                            <div class="col-lg-4 col-sm-12 p-3 cart-items text-center">
+                                <a href="{% url 'buyItems' item_id=1 %}">
+                                <button type="button">
+                                <img src="{% static 'img/s1.jpg' %}" alt="cart-item" class="img-float">
+                                </button>
+                                </a>
+                                <h4 class="text-uppercase m-3">Customised Paints (10 buckets of 1 litre each) @ $200</h4>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 p-3 cart-items text-center">
+                                <a href="{% url 'buyItems' item_id=2 %}">
+                                <button type="button">
+                                <img src="{% static 'img/s2.jpg' %}" alt="cart-item" class="img-float">
+                                </button>
+                                </a>
+                                <h4 class="text-uppercase m-3">Wall Paints Stencils (Set of 5) @ $15</h4>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 p-3 cart-items text-center">
+                                <a href="{% url 'buyItems' item_id=3 %}">
+                                <button type="button">
+                                <img src="{% static 'img/s3.jpg' %}" alt="cart-item" class="img-float">
+                                </button>
+                                </a>
+                                <h4 class="text-uppercase m-3">Jaipuri Printed Bedsheet @ $40</h4>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 p-3 cart-items text-center">
+                                <a href="{% url 'buyItems' item_id=4 %}">
+                                <button type="button">
+                                <img src="{% static 'img/s4.jpg' %}" alt="cart-item" class="img-float">
+                                </button>
+                                </a>
+                                <h4 class="text-uppercase m-3">Designer Wooden Furniture @ $400</h4>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 p-3 cart-items text-center">
+                                <a href="{% url 'buyItems' item_id=5 %}">
+                                <button type="button">
+                                <img src="{% static 'img/s5.jpg' %}" alt="cart-item" class="img-float">
+                                </button>
+                                </a>
+                                <h4 class="text-uppercase m-3">Italian Sofa Set @ $250</h4>
+                            </div>
+                            <div class="col-lg-4 col-sm-12 p-3 cart-items text-center">
+                                <a href="{% url 'buyItems' item_id=6 %}">
+                                <button type="button">
+                                <img src="{% static 'img/s6.jpg' %}" alt="cart-item" class="img-float">
+                                </button>
+                                </a>
+                                <h4 class="text-uppercase m-3">Designer Curtain (2 Pairs) @ $100</h4>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock lowerbody %}
+    

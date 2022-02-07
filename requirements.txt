@@ -1,0 +1,3 @@
+django
+django-phone-field
+stripe

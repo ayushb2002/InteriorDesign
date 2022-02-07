@@ -1,0 +1,311 @@
+{% extends 'homes/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+     Our Pricing   
+{% endblock title %}
+
+
+{% block upperbody %}
+    <section id="hero-price">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 bg-pricing">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-over-pricing">
+                                <span class="h-top text-uppercase">
+                                    Pricing
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock upperbody %}
+    
+
+{% block lowerbody %}
+<section id="price">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="m-5 text-center">
+                    <h3 class="text-uppercase">Click on each to know more!</h3>
+                </div>
+                <div class="m-5">
+                    <div class="row">
+                        <div class="col-lg-4 col-sm-12 px-3 py-3 price-div">
+                            <button type="button" data-toggle="modal" data-target="#myModal1">
+                                <img src="{% static 'img/p1.jpg' %}" alt="room" class="img-fluid">
+                            </button>
+                            <h3 class="my-2 text-uppercase">Living Room</h3>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal1">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Living Rooms</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body l-none">
+                                        <h4>Furniture - On MRP</h4>
+                                        <h4>Decoration Material - On MRP</h4>
+                                        <h4>Paints - </h4>
+                                        <ul>
+                                            <li>Regular - On MRP</li>
+                                            <li>Customised - $10 per liter</li>
+
+                                        </ul>
+                                        <h4>Design Rates: </h4>
+                                        <ul>
+                                            <li>Low Budget Interior Design - $15 per square feet</li>
+                                            <li>Medium Budget Interior Design - $25 per square feet</li>
+                                            <li>High Budget Interior Design - $35 per square feet</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                            
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Room ends-->
+
+                        <div class="col-lg-4 col-sm-12 px-3 py-3 price-div">
+                            <button type="button" data-toggle="modal" data-target="#myModal2">
+                                <img src="{% static 'img/p2.jpg' %}" alt="room" class="img-fluid">
+                            </button>
+                            <h3 class="my-2 text-uppercase">Modular Kitchen</h3>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal2">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Modular Kitchen</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body l-none">
+                                        <h4>Equipments - On MRP</h4>
+                                        <h4>Decoration Material - On MRP</h4>
+                                        <h4>Paints - </h4>
+                                        <ul>
+                                            <li>Regular - On MRP</li>
+                                            <li>Customised - $10 per liter</li>
+
+                                        </ul>
+                                        <h4>Design Rates: </h4>
+                                        <ul>
+                                            <li>Low Budget Interior Design - $10 per square feet</li>
+                                            <li>Medium Budget Interior Design - $20 per square feet</li>
+                                            <li>High Budget Interior Design - $30 per square feet</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                            
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Room ends-->
+
+                        <div class="col-lg-4 col-sm-12 px-3 py-3 price-div">
+                            <button type="button" data-toggle="modal" data-target="#myModal3">
+                                <img src="{% static 'img/p3.jpg' %}" alt="room" class="img-fluid">
+                            </button>
+                            <h3 class="my-2 text-uppercase">Bed Room</h3>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal3">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Bed Room</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body l-none">
+                                        <h4>Furniture - On MRP</h4>
+                                        <h4>Decoration Material - On MRP</h4>
+                                        <h4>Paints - </h4>
+                                        <ul>
+                                            <li>Regular - On MRP</li>
+                                            <li>Customised - $10 per liter</li>
+
+                                        </ul>
+                                        <h4>Design Rates: </h4>
+                                        <ul>
+                                            <li>Low Budget Interior Design - $11 per square feet</li>
+                                            <li>Medium Budget Interior Design - $22 per square feet</li>
+                                            <li>High Budget Interior Design - $33 per square feet</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                            
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Room ends-->
+                        
+                        <div class="col-lg-4 col-sm-12 px-3 py-3 price-div">
+                            <button type="button" data-toggle="modal" data-target="#myModal4">
+                                <img src="{% static 'img/p4.jpg' %}" alt="room" class="img-fluid">
+                            </button>
+                            <h3 class="my-2 text-uppercase">Wash Room</h3>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal4">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Wash Room</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body l-none">
+                                        <h4>Sanitary Items - On MRP</h4>
+                                        <h4>Decoration Material - On MRP</h4>
+                                        <h4>Paints - </h4>
+                                        <ul>
+                                            <li>Regular - On MRP</li>
+                                            <li>Customised - $10 per liter</li>
+
+                                        </ul>
+                                        <h4>Design Rates: </h4>
+                                        <ul>
+                                            <li>Low Budget Interior Design - $9 per square feet</li>
+                                            <li>Medium Budget Interior Design - $18 per square feet</li>
+                                            <li>High Budget Interior Design - $27 per square feet</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                            
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Room ends-->
+
+                        <div class="col-lg-4 col-sm-12 px-3 py-3 price-div">
+                            <button type="button" data-toggle="modal" data-target="#myModal5">
+                                <img src="{% static 'img/p5.jpg' %}" alt="room" class="img-fluid">
+                            </button>
+                            <h3 class="my-2 text-uppercase">Dining Room</h3>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal5">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Dining Room</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body l-none">
+                                        <h4>Furniture - On MRP</h4>
+                                        <h4>Decoration Material - On MRP</h4>
+                                        <h4>Paints - </h4>
+                                        <ul>
+                                            <li>Regular - On MRP</li>
+                                            <li>Customised - $10 per liter</li>
+
+                                        </ul>
+                                        <h4>Design Rates: </h4>
+                                        <ul>
+                                            <li>Low Budget Interior Design - $12 per square feet</li>
+                                            <li>Medium Budget Interior Design - $24 per square feet</li>
+                                            <li>High Budget Interior Design - $36 per square feet</li>
+                                        </ul>
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                            
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Room ends-->
+
+                        <div class="col-lg-4 col-sm-12 px-3 py-3 price-div">
+                            <button type="button" data-toggle="modal" data-target="#myModal6">
+                                <img src="{% static 'img/p6.jpg' %}" alt="room" class="img-fluid">
+                            </button>
+                            <h3 class="my-2 text-uppercase">Exteriors</h3>
+                            <!-- The Modal -->
+                            <div class="modal fade" id="myModal6">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                            
+                                    <!-- Modal Header -->
+                                    <div class="modal-header">
+                                    <h4 class="modal-title">Exteriors</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                    </div>
+                            
+                                    <!-- Modal body -->
+                                    <div class="modal-body">
+                                    <p>
+                                        Swimming pools, exterior decoration etc. are included here. <br>
+                                        Contact our sales executive to know about available plans and possible inclusions
+                                    <br>
+                                    Email: exteriorExecutive@homeDecor.com
+                                    </p>
+                                    </div>
+                            
+                                    <!-- Modal footer -->
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+                                    </div>
+                            
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--Room ends-->
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock lowerbody %}
+    

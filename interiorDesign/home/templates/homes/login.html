@@ -1,0 +1,70 @@
+{% extends 'homes/base.html' %}
+{% load static %}
+
+{% block title %}
+    Login
+{% endblock title %}
+    
+
+{% block upperbody %}
+    <section id="hero-login">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-12 bg-login">
+                    <div class="row">
+                        <div class="col-lg-7 col-sm-12 text-center text-uppercase text-over-login">
+                            <span class="h-top">Login</span>
+                        </div>
+                        <div class="col-lg-5 col-sm-12">
+                       
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock upperbody %}
+    
+
+{% block lowerbody %}
+    <section id="login-page">
+        <div class="container-fluid">
+            <div class="row">
+                
+                {% if success %}
+                    
+                <div class="col-12">
+                    <div class="m-5">
+                        <div class="alert alert-warning">
+                            {{success}}
+                        </div>
+                    </div>
+               </div>
+
+                {% endif %}
+                    
+                <div class="col-12">
+                    <div class="m-5">
+                        <h1>LOGIN FORM</h1>
+                    </div>
+                    <div class="reg-form-cont">
+                        <form action="{% url 'login_user' %}" method="POST" class="inp-form">
+                            {% csrf_token %}
+                            <div class="form-group">
+                                <label for="mail">Username</label>
+                                <input type="text" name="user" class="form-control" id="mail" placeholder="Enter username" autocomplete="off" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password">Password</label>
+                                <input type="password" name="password" class="form-control" id="password" placeholder="Enter password" autocomplete="off" required>
+                            </div>
+                            <div class="btn-spc">
+                                <button type="submit" class="btn btn-outline-primary">Submit</button>
+                            </div>
+                            </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+{% endblock lowerbody %}
+    

@@ -1,0 +1,83 @@
+{% extends 'homes/base.html' %}
+
+{% load static %}
+
+
+{% block title %}
+My Cart - {{request.user.first_name}} {{request.user.last_name}}
+{% endblock title  %}
+
+
+{% block upperbody %}
+
+{% endblock upperbody %}
+
+
+{% block lowerbody %}
+<section>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="p-5 m-5">
+                    <table class="table table-bordered table-responsive-sm">
+                        <thead>
+                            <tr>
+                                <th>Item</th>
+                                <th>Cost</th>
+                                <th>Quantity</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for order in bill %}
+                            <tr>
+                                <td>{{order.item.desc}}</td>
+                                <td>{{order.item.price}}</td>
+                                <td>1</td>
+                                <td><a href="{% url 'delOrder' oid=order.id %}"><i class="fa fa-trash-o"></i></a></td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                    <div class="my-5">
+                        <div class="row">
+                            <div class="col-lg-3 col-sm-12">
+                                <h4>Total Cost - {{total}}</h4>
+                                <h5>Add Items - <a href="{% url 'shop' %}">Click Here!</a></h5>
+                            </div>
+                            <div class="col-lg-9 col-sm-12">
+                                <form action="{% url 'payment' %}" method="POST">
+                                    {% csrf_token %}
+                                    <input type="hidden" name="total" value="{{total}}">
+                                    <div class="form-group">
+                                        <input type="text" name="address" class="form-control"
+                                            placeholder="Enter address with pincode" required autocomplete="off"
+                                            autofocus>
+                                    </div>
+                                    <button type="submit" class="btn btn-outline-primary float-right">Checkout</button>
+                                </form>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                {% if completed %}
+                <div class="cover-btm m-5 p-5">
+                    <h1>Completed Orders:</h1>
+                    <ul>
+
+                        {% for orders in completed %}
+                        <li>{{orders}}</li>
+                        {% endfor %}
+
+                    </ul>
+                </div>
+                {% endif %}
+
+
+            </div>
+        </div>
+    </div>
+</section>
+{% endblock lowerbody %}
