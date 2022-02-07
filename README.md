@@ -1,6 +1,4 @@
-A very warm welcome!
-
-This is my final project based on a buisness of an interior designer!
+# Interior design purchase portal
 
 This website uses Django, Javascript, HTML, SCSS, Stripe API and Font awesome icons along with bootstrap and google fonts.
 
